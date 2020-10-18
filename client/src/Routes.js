@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { Home, Register, Navbar } from './components'
 
-function App () {
+function Routes () {
   return (
     <BrowserRouter>
       <Navbar />
@@ -14,4 +14,4 @@ function App () {
   )
 }
 
-export default App
+export default Routes
