@@ -1,8 +1,10 @@
-module.exports = {
+const resolvers = {
   Mutation: {
-        formRegister: (args) => {
-          console.log(args)
-          return args
-        }
-  }
-}
+    formRegister: (_, {args}, {req}) => {
+      console.log(args)
+      return args;
+    },
+  },
+};
+
+module.exports = resolvers;

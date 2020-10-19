@@ -1,43 +1,52 @@
-import React, { useState } from 'react'
-import { Formik, Form, Field } from 'formik'
-import { ValidationSchema } from './ValidationSchema'
-import { useMutation } from '@apollo/client'
-import { REGISTER_MUTATION } from '../../store/actions/graphql'
+import React from "react";
+// import React, { useState } from 'react'
+import { Formik, Form, Field } from "formik";
+import { ValidationSchema } from "./ValidationSchema";
+import { useMutation } from "@apollo/client";
+import { REGISTER_MUTATION } from "../../store/actions/graphql";
 
 const styles = {
   label: {
-    paddingLeft: '4rem',
-    justifyContent: 'flex-end'
-  }
-}
+    paddingLeft: "4rem",
+    justifyContent: "flex-end",
+  },
+};
 
 export const Register = () => {
-  const [formRegister, { data }] = useMutation(REGISTER_MUTATION)
-  const [vals, setVals] = useState({})
-  console.log(`💥💥💥`, vals)
-  // console.log(`💥💥💥`, data)
+  const [formRegister, { data, loading }] = useMutation(REGISTER_MUTATION);
+  // const [formRegister, { data, loading }] = useMutation(REGISTER_MUTATION);
+  // const [vals, setVals] = useState({})
+  // console.log(`💥💥💥`, vals)
+  // console.log(`💥💥💥`, { data, loading });
+
+  // if (loading) console.log("data loading");
+
+  // console.log(`💥💥💥`, data);
 
   return (
     <div>
       <h1>Registeration</h1>
       <Formik
         initialValues={{
-          firstName: '',
-          lastName: '',
-          age: '',
-          jobTitle: '',
-          address: '',
-          city: '',
-          country: '',
-          phoneNumber: '',
-          email: ''
+          firstName: "",
+          lastName: "",
+          age: 0,
+          jobTitle: "",
+          address: "",
+          city: "",
+          country: "",
+          phoneNumber: "",
+          email: "",
         }}
         validationSchema={ValidationSchema}
         validator={() => ({})}
-        onSubmit={values => {
+        onSubmit={(values) => {
+          console.log(typeof values.age)
+          console.log(values.age)
+          const context = { ...values, age: Number(values.age) || 0 };
           // console.log(values)
-          setVals(values)
-          formRegister({ variables: { args: values } })
+          // setVals(values)
+          formRegister({ variables: { args: context } });
         }}
       >
         {({ errors, touched }) => (
@@ -49,7 +58,7 @@ export const Register = () => {
                     <label style={styles.label}>First Name: </label>
                   </td>
                   <td>
-                    <Field name='firstName' />
+                    <Field name="firstName" />
                     {touched.firstName && errors.firstName && (
                       <div>{errors.firstName}</div>
                     )}
@@ -60,7 +69,7 @@ export const Register = () => {
                     <label style={styles.label}>Last Name: </label>
                   </td>
                   <td>
-                    <Field name='lastName' />
+                    <Field name="lastName" />
                     {touched.lastName && errors.lastName && (
                       <div>{errors.lastName}</div>
                     )}
@@ -71,7 +80,7 @@ export const Register = () => {
                     <label style={styles.label}>Age: </label>
                   </td>
                   <td>
-                    <Field name='age' />
+                    <Field name="age" type="number"/>
                     {touched.age && errors.age && <div>{errors.age}</div>}
                   </td>
                 </tr>
@@ -80,7 +89,7 @@ export const Register = () => {
                     <label style={styles.label}>Job Title: </label>
                   </td>
                   <td>
-                    <Field name='jobTitle' />
+                    <Field name="jobTitle" />
                     {touched.jobTitle && errors.jobTitle && (
                       <div>{errors.jobTitle}</div>
                     )}
@@ -91,7 +100,7 @@ export const Register = () => {
                     <label style={styles.label}>Address: </label>
                   </td>
                   <td>
-                    <Field name='address' />
+                    <Field name="address" />
                     {touched.address && errors.address && (
                       <div>{errors.address}</div>
                     )}
@@ -102,7 +111,7 @@ export const Register = () => {
                     <label style={styles.label}>City: </label>
                   </td>
                   <td>
-                    <Field name='city' />
+                    <Field name="city" />
                     {touched.city && errors.city && <div>{errors.city}</div>}
                   </td>
                 </tr>
@@ -111,7 +120,7 @@ export const Register = () => {
                     <label style={styles.label}>Country: </label>
                   </td>
                   <td>
-                    <Field name='country' />
+                    <Field name="country" />
                     {touched.country && errors.country && (
                       <div>{errors.country}</div>
                     )}
@@ -122,7 +131,7 @@ export const Register = () => {
                     <label style={styles.label}>Phone Number: </label>
                   </td>
                   <td>
-                    <Field name='phoneNumber' />
+                    <Field name="phoneNumber" />
                     {touched.phoneNumber && errors.phoneNumber && (
                       <div>{errors.phoneNumber}</div>
                     )}
@@ -133,14 +142,14 @@ export const Register = () => {
                     <label style={styles.label}>Email: </label>
                   </td>
                   <td>
-                    <Field name='email' />
+                    <Field name="email" />
                     {touched.email && errors.email && <div>{errors.email}</div>}
                   </td>
                 </tr>
                 <tr>
                   <td></td>
                   <td>
-                    <button type='submit'>Submit</button>
+                    <button type="submit">Submit</button>
                   </td>
                 </tr>
               </tbody>
@@ -149,5 +158,5 @@ export const Register = () => {
         )}
       </Formik>
     </div>
-  )
-}
+  );
+};

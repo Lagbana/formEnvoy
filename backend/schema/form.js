@@ -1,4 +1,4 @@
-const { gql } = require('apollo-server-express')
+const { gql } = require("apollo-server-express");
 
 const form = gql`
   type Form {
@@ -28,9 +28,9 @@ const form = gql`
   type Mutation {
     formRegister(args: FormInput!): Form!
   }
-  
+
   type Query {
     dummy: String
   }
-`
-module.exports = form
+`;
+module.exports = form;
