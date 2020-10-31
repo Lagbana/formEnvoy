@@ -20,13 +20,13 @@ async function messanger() {
 
   // get the selector input type=file (for upload file)
   await page.waitForSelector("input[type=file]");
-  await page.waitFor(1000);
+  await page.waitForTimeout(1000);
 
   // get the ElementHandle of the selector above
     const inputUploadHandle = await page.$("input[type=file]");
 
-  // prepare file to upload, I'm using test_to_upload.jpg file on same directory as this script
-    let fileToUpload = path.join(__dirname, "./test.pdf");
+  // prepare file to upload
+    let fileToUpload = path.join(__dirname, "../../temp/test.pdf");
 
   // Sets the value of the file input to fileToUpload
   inputUploadHandle.uploadFile(fileToUpload);
