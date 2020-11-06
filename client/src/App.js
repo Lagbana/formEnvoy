@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import { Home, Register, Navbar } from './components'
+import { Home, Register, Navbar } from 'components/index'
 
 function App () {
   return (

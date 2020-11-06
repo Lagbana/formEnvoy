@@ -1,3 +1,3 @@
-export * from './Register/Register'
-export * from './Home/Home'
-export * from './Navbar/Navbar'
+export * from 'components/Register/Register'
+export * from 'components/Home/Home'
+export * from 'components/Navbar/Navbar'
