@@ -9,12 +9,13 @@ import {
   ApolloClient,
   InMemoryCache,
 } from "@apollo/client";
+import { WebAlertProvider } from "libs/ui/src/WebAlert/WebAlertProvider";
 
 const GITHUB_BASE_URL = "http://localhost:8080/graphql";
 const cache = new InMemoryCache({});
 
 const httpLink = new HttpLink({
-  uri: GITHUB_BASE_URL
+  uri: GITHUB_BASE_URL,
 });
 
 const client = new ApolloClient({
@@ -25,7 +26,9 @@ const client = new ApolloClient({
 ReactDOM.render(
   <ApolloProvider client={client}>
     <React.StrictMode>
-      <App />
+      <WebAlertProvider>
+        <App />
+      </WebAlertProvider>
     </React.StrictMode>
   </ApolloProvider>,
   document.getElementById("root")

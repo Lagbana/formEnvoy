@@ -2,20 +2,16 @@
 =============================== */
 
 // font families
-import { Platform } from 'react-native';
-
 const maxFontSizeMultiplier = 1.25; // max size text can be scaled in app
 
-
 const families = {
-  default: 'ObjektivMk1-Regular',
-  medium: 'ObjektivMk1-Medium',
-  bold: 'ObjektivMk1-Bold',
-  black: 'ObjektivMk2-XBold',
+  default: "Roboto",
+  medium: "Roboto",
+  bold: "Poppins",
+  black: "Poppins",
 };
 
 // platform-specific styles
-
 const paddingTop = 0;
 
 const sizes = {
@@ -28,25 +24,24 @@ const sizes = {
   heading: 30,
 };
 
-
 // titles
 const titleSmall = {
   fontSize: sizes.default,
-  lineHeight: sizes.default * 1.1,
+  // lineHeight: sizes.default * 1.1,
   fontFamily: families.bold,
   paddingTop: sizes.default * paddingTop,
 };
 
 const titleMedium = {
   fontSize: sizes.xlarge,
-  lineHeight: sizes.xlarge * 1.1,
+  // lineHeight: sizes.xlarge * 1.1,
   fontFamily: families.bold,
   paddingTop: sizes.xlarge * paddingTop,
 };
 
 const titleLarge = {
   fontSize: sizes.heading,
-  lineHeight: sizes.heading * 1.1,
+  // lineHeight: sizes.heading * 1.1,
   paddingTop: sizes.heading * paddingTop,
   fontFamily: families.bold,
   //maxWidth: '50%',
@@ -55,6 +50,7 @@ const titleLarge = {
 // drawer nav
 const drawerItem = {
   fontSize: sizes.default,
+  fontWeight: "normal",
   lineHeight: sizes.default * 1.1,
   fontFamily: families.default,
   paddingTop: sizes.default * paddingTop,
@@ -64,36 +60,41 @@ const drawerItem = {
 
 const bodyXsmall = {
   fontSize: sizes.xsmall,
-  lineHeight: sizes.xsmall * 1.4,
+  // lineHeight: sizes.xsmall * 1.4,
   fontFamily: families.default,
+  fontWeight: "normal",
   paddingTop: sizes.xsmall * paddingTop,
 };
 
 const bodySmall = {
   fontSize: sizes.small,
-  lineHeight: sizes.small * 1.4,
+  // lineHeight: sizes.small * 1.4,
   fontFamily: families.default,
+  fontWeight: "normal",
   paddingTop: sizes.small * paddingTop,
 };
 
 const bodyDefault = {
   fontSize: sizes.default,
-  lineHeight: sizes.default * 1.4,
+  // lineHeight: sizes.default * 1.4,
   fontFamily: families.default,
+  fontWeight: "normal",
   paddingTop: sizes.default * paddingTop,
 };
 
 const bodyLarge = {
   fontSize: sizes.large,
-  lineHeight: sizes.large * 1.4,
+  // lineHeight: sizes.large * 1.4,
   fontFamily: families.default,
+  fontWeight: "normal",
   paddingTop: sizes.large * paddingTop,
 };
 
 const bodyXlarge = {
   fontSize: sizes.xlarge,
-  lineHeight: sizes.xlarge * 1.4,
+  // lineHeight: sizes.xlarge * 1.4,
   fontFamily: families.default,
+  fontWeight: "normal",
   paddingTop: sizes.xlarge * paddingTop,
 };
 

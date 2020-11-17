@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 const styles = {
   component: {
-    width: '100vw',
     height: '6vh',
     backgroundColor: 'red',
     color: 'white',
@@ -12,7 +11,7 @@ const styles = {
   linksContainer: {
     width: '40vw',
     height: '6vh',
-    backgroundColor: 'green',
+    backgroundColor: 'yellow',
     color: 'black',
     marginLeft: 'auto',
     marginRight: 'auto'

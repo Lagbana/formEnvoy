@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppText /> renders child components correctly correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "marginBottom": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  <Text>
+    My child
+  </Text>
+</View>
+`;
+
+exports[`<AppText /> renders empty string correctly 1`] = `""`;
+
+exports[`<AppText /> renders html correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "marginBottom": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  <HTML
+    allowFontScaling={true}
+    baseFontStyle={
+      Object {
+        "color": "#3E3F4B",
+        "fontFamily": "ObjektivMk1-Regular",
+        "fontSize": 20,
+        "lineHeight": 28,
+        "paddingTop": 5,
+      }
+    }
+    classesStyles={Object {}}
+    debug={false}
+    decodeEntities={true}
+    emSize={14}
+    html="<bold>Some bold text</bold>"
+    ignoredStyles={Array []}
+    ignoredTags={
+      Array [
+        "head",
+        "script",
+        "audio",
+        "video",
+        "track",
+        "embed",
+        "object",
+        "param",
+        "source",
+        "canvas",
+        "noscript",
+        "caption",
+        "col",
+        "colgroup",
+        "table",
+        "tbody",
+        "td",
+        "tfoot",
+        "th",
+        "thead",
+        "tr",
+        "button",
+        "datalist",
+        "fieldset",
+        "form",
+        "input",
+        "label",
+        "legend",
+        "meter",
+        "optgroup",
+        "option",
+        "output",
+        "progress",
+        "select",
+        "textarea",
+        "details",
+        "dialog",
+        "menu",
+        "menuitem",
+        "summary",
+      ]
+    }
+    imagesMaxWidth={750}
+    onLinkPress={[Function]}
+    ptSize={1.3}
+    renderers={
+      Object {
+        "a": [Function],
+        "br": [Function],
+        "iframe": [Function],
+        "img": [Function],
+        "ol": [Function],
+        "pre": [Function],
+        "textwrapper": [Function],
+        "ul": [Function],
+      }
+    }
+    staticContentMaxWidth={750}
+    tagsStyles={
+      Object {
+        "a": Object {
+          "color": "#3485D7",
+          "textDecorationLine": "none",
+        },
+        "b": Object {
+          "fontFamily": "ObjektivMk1-Bold",
+          "fontWeight": null,
+        },
+        "strong": Object {
+          "fontFamily": "ObjektivMk1-Bold",
+          "fontWeight": null,
+        },
+      }
+    }
+    textSelectable={false}
+  />
+</View>
+`;
+
+exports[`<AppText /> renders null correctly 1`] = `""`;
+
+exports[`<AppText /> renders undefined correctly 1`] = `""`;

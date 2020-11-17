@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppCheckboxOption /> renders correctly 1`] = `
+<ForwardRef
+  onLongPress={[Function]}
+  onPress={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "marginVertical": 12,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "borderColor": "#CACADA",
+          "borderRadius": 6,
+          "borderWidth": 2,
+          "height": 26,
+          "marginRight": 25,
+          "width": 26,
+        },
+        Object {},
+      ]
+    }
+  />
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#FFFFFF88",
+          "flex": 1,
+          "fontFamily": "ObjektivMk1-Bold",
+          "fontSize": 18,
+          "lineHeight": 19.8,
+          "marginTop": 1,
+          "paddingTop": 4.5,
+        },
+        Object {},
+      ]
+    }
+  />
+</ForwardRef>
+`;

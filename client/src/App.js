@@ -5,7 +5,6 @@ import { Home, Register, Navbar } from 'components/index'
 function App () {
   return (
     <BrowserRouter>
-      <Navbar />
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/register' component={Register} />

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppModal /> renders correctly 1`] = `
+<Component
+  animationType="slide"
+  hardwareAccelerated={false}
+  onDismiss={[Function]}
+  onRequestClose={[Function]}
+  onShow={[Function]}
+  presentationStyle="pageSheet"
+  visible={true}
+/>
+`;

@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppTag /> renders correctly 1`] = `
+<ForwardRef
+  onPress={[Function]}
+  style={
+    Array [
+      undefined,
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#4749A0",
+        "borderRadius": 30,
+        "display": "flex",
+        "flexDirection": "row",
+        "marginBottom": 6,
+        "marginRight": 8,
+        "maxWidth": "100%",
+        "paddingHorizontal": 14,
+        "paddingVertical": 4,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#FFFFFF",
+        "fontFamily": "ObjektivMk1-Bold",
+        "fontSize": 18,
+        "lineHeight": 19.8,
+        "paddingTop": 4.5,
+      }
+    }
+  >
+    test label
+  </Text>
+  <AppIcon
+    name="x"
+    size={20}
+    style={
+      Object {
+        "color": "#FF5441",
+        "marginLeft": 6,
+        "marginRight": -2,
+        "marginTop": 2,
+      }
+    }
+  />
+</ForwardRef>
+`;

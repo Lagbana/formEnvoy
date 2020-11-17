@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppRadioButton /> renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "justifyContent": "center",
+        "marginHorizontal": -7,
+        "marginVertical": 20,
+      },
+      undefined,
+    ]
+  }
+/>
+`;

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppSelect /> renders correctly 1`] = `
+<AppSelectNative
+  items={
+    Array [
+      Object {
+        "Id": "",
+        "Name": "",
+        "Value": "",
+      },
+    ]
+  }
+  keyExtractor={[Function]}
+/>
+`;

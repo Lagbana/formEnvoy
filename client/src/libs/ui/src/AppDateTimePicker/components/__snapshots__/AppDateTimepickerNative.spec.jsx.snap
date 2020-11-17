@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppDateTimePicker /> renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "marginBottom": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  <DateTimePickerModal
+    cancelTextIOS="Cancel"
+    confirmTextIOS="Confirm"
+    date={2020-09-23T15:45:00.247Z}
+    display="spinner"
+    headerTextIOS="Pick a date"
+    isDarkModeEnabled={false}
+    isVisible={false}
+    modalPropsIOS={Object {}}
+    mode="date"
+    onCancel={[Function]}
+    onConfirm={[Function]}
+    onHide={[Function]}
+    pickerContainerStyleIOS={Object {}}
+  />
+  <ForwardRef
+    onPress={[Function]}
+  >
+    <ForwardRef
+      editable={false}
+      icon="calendar"
+      value="September 23, 2020"
+    />
+  </ForwardRef>
+</View>
+`;

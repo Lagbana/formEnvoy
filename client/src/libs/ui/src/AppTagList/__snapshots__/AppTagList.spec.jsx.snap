@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppTagList /> renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "marginVertical": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  <AppTag
+    editable={true}
+    key="0"
+    onPress={[Function]}
+    tag={
+      Object {
+        "label": "test label",
+        "value": 0,
+      }
+    }
+  />
+</View>
+`;

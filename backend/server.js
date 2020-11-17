@@ -51,41 +51,6 @@ const server = new ApolloServer({
 
 server.applyMiddleware({ app });
 
-const slackApp = new App({
-  token: "xoxb-1468039943731-1468145619378-1mN9jRKCNDFTtOLDRGhS6ALI",
-  signingSecret: "ddd54f2f37a5af3835d4dac6897fe972",
-  // LogLevel can be imported and used to make debugging simpler
-  logLevel: LogLevel.DEBUG,
-});
-
-async function findConversation(name) {
-  try {
-    // Call the conversations.list method using the built-in WebClient
-    const result = await slackApp.client.conversations.list({
-      // The token you used to initialize your app
-      token: "xoxb-1468039943731-1468145619378-1mN9jRKCNDFTtOLDRGhS6ALI",
-    });
-
-    for (const channel of result.channels) {
-      if (channel.name === name) {
-        conversationId = channel.id;
-
-        // Print result
-        console.log("Found conversation ID: " + conversationId);
-      }
-    }
-  } catch (error) {
-    console.error(error);
-  }
-}
-findConversation("formenvoy-support");
-
-(async () => {
-  // Start your app
-  await slackApp.start(4000);
-
-  console.log("⚡️ Bolt app is running!");
-})();
 
 app.listen({ port: PORT }, () => {
   console.log(`🚀🚀🚀 App is ready on PORT: ${PORT}`);

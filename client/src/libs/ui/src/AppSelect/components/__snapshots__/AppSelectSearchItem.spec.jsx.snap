@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppSelectSearchItem /> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "paddingHorizontal": 10,
+      "paddingVertical": 5,
+    }
+  }
+>
+  <ForwardRef
+    onPress={[Function]}
+  >
+    <AppIcon
+      name="arrow-left"
+      size={24}
+      style={
+        Object {
+          "color": "#808898",
+          "padding": 10,
+        }
+      }
+    />
+  </ForwardRef>
+  <Text
+    style={
+      Object {
+        "color": "#3485D7",
+        "fontFamily": "ObjektivMk1-Regular",
+        "fontSize": 20,
+        "lineHeight": 28,
+        "paddingBottom": 6,
+        "paddingTop": 0,
+      }
+    }
+  >
+    Test title
+  </Text>
+  <ForwardRef
+    onPress={[Function]}
+  >
+    <AppIcon
+      name="x"
+      size={24}
+      style={
+        Object {
+          "color": "#808898",
+          "padding": 10,
+        }
+      }
+    />
+  </ForwardRef>
+</View>
+`;

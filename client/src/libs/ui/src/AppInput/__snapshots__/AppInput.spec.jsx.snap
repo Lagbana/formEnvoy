@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppInput /> renders correctly 1`] = `
+Array [
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#fff",
+          "borderRadius": 10,
+          "elevation": 5,
+          "marginBottom": 10,
+          "marginTop": 10,
+          "padding": 15,
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 4,
+            "width": 0,
+          },
+          "shadowOpacity": 0.1,
+          "shadowRadius": 4,
+          "width": "100%",
+        },
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "zIndex": 2,
+        },
+      ]
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      autoCapitalize="sentences"
+      autoCompleteType="off"
+      enablesReturnKeyAutomatically={true}
+      keyboardType="default"
+      multiline={false}
+      numberOfLines={1}
+      placeholderTextColor="#c7c7cc"
+      rejectResponderTermination={true}
+      returnKeyType="done"
+      secureTextEntry={false}
+      style={
+        Object {
+          "color": "#3E3F4B",
+          "flex": 1,
+          "fontFamily": "ObjektivMk1-Medium",
+          "fontSize": 18,
+          "minHeight": 24,
+          "padding": 0,
+        }
+      }
+      textContentType="none"
+      underlineColorAndroid="transparent"
+      value="Test 123"
+    />
+  </View>,
+  <View
+    style={
+      Object {
+        "opacity": 0,
+      }
+    }
+  />,
+]
+`;

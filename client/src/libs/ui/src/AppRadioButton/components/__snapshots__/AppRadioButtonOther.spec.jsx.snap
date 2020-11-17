@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppRadioButtonOtherOption /> renders correctly 1`] = `
+<ForwardRef
+  style={
+    Array [
+      Object {
+        "padding": 7,
+        "width": "50%",
+      },
+    ]
+  }
+>
+  <ForwardRef
+    onLongPress={[Function]}
+    onPress={[Function]}
+    style={
+      Array [
+        Object {},
+        Object {},
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "paddingLeft": 10,
+          "paddingRight": 42,
+          "paddingVertical": 20,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#808898",
+              "fontFamily": "ObjektivMk1-Bold",
+              "fontSize": 18,
+              "lineHeight": 19.8,
+              "paddingTop": 4.5,
+            },
+            Object {},
+          ]
+        }
+      >
+        test label
+      </Text>
+    </View>
+  </ForwardRef>
+</ForwardRef>
+`;

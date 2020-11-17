@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppSelectListItem /> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#F8F8FA",
+      "borderColor": "#80889822",
+      "borderTopWidth": 1,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#4749A0",
+          "fontFamily": "ObjektivMk1-Bold",
+          "fontSize": 16,
+          "lineHeight": 17.6,
+          "paddingBottom": 12,
+          "paddingHorizontal": 20,
+          "paddingTop": 16,
+        },
+      ]
+    }
+  >
+    selected item
+  </Text>
+</View>
+`;

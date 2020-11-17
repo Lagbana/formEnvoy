@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BaseInput /> renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#fff",
+        "borderRadius": 10,
+        "elevation": 5,
+        "marginBottom": 10,
+        "marginTop": 10,
+        "padding": 15,
+        "shadowColor": "#000",
+        "shadowOffset": Object {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.1,
+        "shadowRadius": 4,
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+/>
+`;
