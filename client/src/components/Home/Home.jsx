@@ -1,4 +1,5 @@
 import React from "react";
+import { WebPageSection } from "libs/ui/src/WebPageSection/WebPageSection";
 import { WebContainer } from "libs/ui/src/WebContainer/WebContainer";
 import { WebHeader } from "libs/ui/src/WebHeader/WebHeader";
 import { WebScreen } from "libs/ui/src/WebScreen/WebScreen";
@@ -100,73 +101,78 @@ export const Home = () => {
 
   const alert = useAlert();
 
-  const checker = false;
-
-  // checker ? alert.show(" Alert Test True ") : alert.show(" Alert Test False ");
-
   return (
     <WebScreen>
-      <WebContainer customStyles={{ ...containerStyles, ...styles.c2 }}>
-        <WebHeader title={"Welcome to FormEnvoy"} customStyles={styles.t2} />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          non aut deserunt, nostrum, accusamus velit maiores eum quis
-          blanditiis, fugiat obcaecati modi cumque. Iure perspiciatis laudantium
-          sunt esse sed laborum!
-        </p>
-        <button style={styles.b2} onClick={() => alert.show(" Hello ")}>
-          {"Info Button"}
-        </button>
-        <WebButton intent={"danger"}>{"Info Button"}</WebButton>
-      </WebContainer>
-      <WebContainer customStyles={{ ...containerStyles, ...styles.c1 }}>
-        <WebHeader title={"Welcome to FormEnvoy"} customStyles={styles.t1} />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          non aut deserunt, nostrum, accusamus velit maiores eum quis
-          blanditiis, fugiat obcaecati modi cumque. Iure perspiciatis laudantium
-          sunt esse sed laborum!
-        </p>
-        <button style={styles.b1} onClick={() => alert.show(" Hello ")}>
-          {"Success Button"}
-        </button>
-      </WebContainer>
-      <WebContainer customStyles={{ ...containerStyles, ...styles.c3 }}>
-        <WebHeader title={"Welcome to FormEnvoy"} customStyles={styles.t3} />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          non aut deserunt, nostrum, accusamus velit maiores eum quis
-          blanditiis, fugiat obcaecati modi cumque. Iure perspiciatis laudantium
-          sunt esse sed laborum!
-        </p>
-        <button style={styles.b3} onClick={() => alert.show(" Hello ")}>
-          {"Warning Button"}
-        </button>
-      </WebContainer>
-      <WebContainer customStyles={{ ...containerStyles, ...styles.c4 }}>
-        <WebHeader title={"Welcome to FormEnvoy"} customStyles={styles.t4} />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          non aut deserunt, nostrum, accusamus velit maiores eum quis
-          blanditiis, fugiat obcaecati modi cumque. Iure perspiciatis laudantium
-          sunt esse sed laborum!
-        </p>
-        <button style={styles.b4} onClick={() => alert.show(" Hello ")}>
-          {"Error Button"}
-        </button>
-      </WebContainer>
-      <WebContainer customStyles={{ ...containerStyles, ...styles.c5 }}>
-        <WebHeader title={"Welcome to FormEnvoy"} customStyles={styles.t5} />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          non aut deserunt, nostrum, accusamus velit maiores eum quis
-          blanditiis, fugiat obcaecati modi cumque. Iure perspiciatis laudantium
-          sunt esse sed laborum!
-        </p>
-        <button style={styles.b5} onClick={() => alert.show(" Hello ")}>
-          {"Generic Button"}
-        </button>
-      </WebContainer>
+      <WebPageSection isHero={true} height={"100vh"}>
+        <div>
+          <WebHeader title={"Welcome to FormEnvoy"} customStyles={styles.t2} />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            non aut deserunt, nostrum, accusamus velit maiores eum quis
+            blanditiis, fugiat obcaecati modi cumque. Iure perspiciatis
+            laudantium sunt esse sed laborum!
+          </p>
+          <button style={styles.b2} onClick={() => alert.show(" Hello ")}>
+            {"Success Button"}
+          </button>
+        </div>
+      </WebPageSection>
+      <WebPageSection height={"40vh"} isSectionOne={true}>
+        <div>
+          <WebHeader title={"Welcome to FormEnvoy"} customStyles={styles.t1} />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            non aut deserunt, nostrum, accusamus velit maiores eum quis
+            blanditiis, fugiat obcaecati modi cumque. Iure perspiciatis
+            laudantium sunt esse sed laborum!
+          </p>
+          <button style={styles.b1} onClick={() => alert.show(" Hello ")}>
+            {"Success Button"}
+          </button>
+        </div>
+      </WebPageSection>
+      <WebPageSection height={"40vh"} isSectionTwo={true}>
+        <div>
+          <WebHeader title={"Welcome to FormEnvoy"} customStyles={styles.t3} />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            non aut deserunt, nostrum, accusamus velit maiores eum quis
+            blanditiis, fugiat obcaecati modi cumque. Iure perspiciatis
+            laudantium sunt esse sed laborum!
+          </p>
+          <button style={styles.b3} onClick={() => alert.show(" Hello ")}>
+            {"Success Button"}
+          </button>
+        </div>
+      </WebPageSection>
+      <WebPageSection height={"40vh"} isSectionThree={true}>
+        <div>
+          <WebHeader title={"Welcome to FormEnvoy"} customStyles={styles.t4} />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            non aut deserunt, nostrum, accusamus velit maiores eum quis
+            blanditiis, fugiat obcaecati modi cumque. Iure perspiciatis
+            laudantium sunt esse sed laborum!
+          </p>
+          <button style={styles.b4} onClick={() => alert.show(" Hello ")}>
+            {"Success Button"}
+          </button>
+        </div>
+      </WebPageSection>
+      <WebPageSection height={"40vh"} isFooter={true}>
+        <div>
+          <WebHeader title={"Welcome to FormEnvoy"} customStyles={styles.t5} />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            non aut deserunt, nostrum, accusamus velit maiores eum quis
+            blanditiis, fugiat obcaecati modi cumque. Iure perspiciatis
+            laudantium sunt esse sed laborum!
+          </p>
+          <button style={styles.b5} onClick={() => alert.show(" Hello ")}>
+            {"Success Button"}
+          </button>
+        </div>
+      </WebPageSection>
     </WebScreen>
   );
 };
